@@ -24,19 +24,18 @@
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = `
-    int pos = 0, neg = 0;
-    for (int i = 0; i &lt; SRC_SIZE; i++)
+  var initial = `int pos = 0, neg = 0;
+for (int i = 0; i &lt; SRC_SIZE; i++)
+{
+    if (source[i] &gt; 0)
     {
-        if (source[i] &gt; 0)
-        {
-            pos++;
-        }
-        else
-        {
-            neg++;
-        }
-    }`;
+        pos++;
+    }
+    if (source[i] &lt; 0)
+    {
+        neg++;
+    }
+}`;
     console.log(initial);
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sortable",
