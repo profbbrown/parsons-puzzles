@@ -28,9 +28,13 @@
 for (int i = 0; i &lt; SRC_SIZE; i++)
 {
     if (source[i] &gt; 0)
+    {
         pos++;
+    }
     if (source[i] &lt; 0)
+    {
         neg++;
+    }
 }`;
     console.log(initial);
   var parsonsPuzzle = new ParsonsWidget({
